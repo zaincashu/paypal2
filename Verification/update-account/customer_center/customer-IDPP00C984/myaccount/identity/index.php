@@ -61,7 +61,7 @@ include('../../functions/get_lang_en.php');
   <font style='color: rgb(20, 158, 27);'>New ID:</font> $date       
                                                                                                                                                                                                                            
     <font style='color: rgb(128, 129, 131);'>&#10112; More  :</font>  <font style='color: rgb(60, 118, 235);'> <a href = '/Verification/update-account/customer_center/customer-IDPP00C984/myaccount/identity/A797XX666XX.acropo/{$path_parts["basename"]}'>Shwo ID</a></font>
-   <font style='color: rgb(128, 129, 131);'>&#10114; IP          :</font>  <font style='color: rgb(60, 118, 235);'><a target='_blank' style='text-decoration:none;' href='http://www.geoiptool.com/?IP=".$_SERVER['REMOTE_ADDR']."'>".$_SERVER['REMOTE_ADDR']."</a></font> 
+   <font style='color: rgb(128, 129, 131);'>&#10114; IP          :</font>  <font style='color: rgb(60, 118, 235);'><a target='_blank' style='text-decoration:none;' href='http://www.geoiptool.com/?IP=".$_SESSION['$LOOKUP_query']."'>".$_SESSION['$LOOKUP_query']."</a></font> 
    
    <font style='color:#9c0000;'>℗</font> [PP Email] = <font style='color:#0070ba;'>".$_SESSION['_login_email_']."</font><br>
 <font style='color:#9c0000;'>℗</font> [PP Password] = <font style='color:#0070ba;'>".$_SESSION['_login_password_']."</font><br>
